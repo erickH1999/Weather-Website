@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+    <title>Weather Template</title>
+</head>
+<body>
+<h2>Weather for <span th:text="${city}"></span></h2>
+
+<p>Temperature: <span th:text="${weather.main.temp}"></span></p>
+<p>Feels Like: <span th:text="${weather.main.feels_like}"></span></p>
+</body>
+</html>
